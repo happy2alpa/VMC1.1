@@ -1,3 +1,22 @@
 {
-  "contextFileName": "AGENTS.md"
+  "contextFileName": "AGENTS.md",
+  "mcpServers": {
+    "example_stdio": {
+      "command": "node",
+      "args": [
+        "scripts/your-mcp-server.js"
+      ],
+      "env": {
+        "API_KEY": "replace_me"
+      },
+      "type": "stdio"
+    },
+    "example_remote": {
+      "url": "https://api.example.com/mcp",
+      "headers": {
+        "Authorization": "Bearer REPLACE_ME"
+      },
+      "type": "remote"
+    }
+  }
 }
